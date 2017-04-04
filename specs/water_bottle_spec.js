@@ -34,6 +34,10 @@ beforeEach(function(){
     assert.strictEqual(0, bottle.volume);
 
   });
+  it("should not go below 0", function(){
+    bottle.drink();
+    assert.strictEqual(0, bottle.volume);
+  });
 
   
 });

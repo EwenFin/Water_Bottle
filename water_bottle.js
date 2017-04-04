@@ -4,11 +4,15 @@ var WaterBottle = function(){
     this.volume = 100;
   }
   this.drink = function(){
-    this.volume -= 10;
+    if(this.volume > 10)
+    this.volume -= 10
+    
   }
   this.empty = function(){
-    this.volume = 0
+    this.volume = 0;
   }
+
+  
 
 };
 
